@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form & Input</title>
+</head>
+<body>
+    <form action="process.php" id="form"> 
+    <!-- Header -->
+    <header id="header" class="card">
+        <h1>Udit's Website</h1>
+        <p>Just For Everyone</p>
+    </header>
+        <!-- Text Input -->
+        <div>
+            <label for="name"><ins>Name</ins></label>
+            <input type="text" id="name" name="name" placeholder="Enter the name">
+        </div><br>
+        <!-- Email Input -->
+        <div>
+            <label for="email"><ins>Email</ins></label>
+            <input type="email" name="email" id="email" placeholder="Enter the email">
+        </div><br>
+        <!-- Textarea -->
+        <div>
+            <label for="message"><ins>Message</ins></label>
+            <textarea name="message" id="message" value="comment" cols="30" rows="4" placeholder="Comment"></textarea>
+        </div><br>
+        <!-- Gender Input -->
+        <div>
+            <label for="sex"><ins>Sex</ins></label>
+            <select name="sex" id="sex">
+                <option value="select" selected>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Age Input -->
+        <br>
+        <div>
+            <label for="age"><ins>Age</ins></label>
+            <input type="number" name="age" id="age" placeholder="0">
+        </div>
+        <!-- DOB Input -->
+        <br>
+        <div>
+            <label for="birthday"><ins>Birthday</ins></label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <!-- Radio Input -->
+        <br>
+        <div>
+            <label for="membership"><ins>Membership</ins></label>
+            <input type="radio" name="membership" value="simple" id="membership" checked>Simple
+            <input type="radio" name="membership" value="premium" id="membership">Premium
+            <input type="radio" name="membership" value="standard" id="membership">Standard
+            <input type="radio" name="membership" value="super" id="membership">Super
+        </div>
+        <!-- Checkbox Input -->
+        <br>
+        <div>
+            <label for="hobbies"><ins>Hobbies:</ins></label>
+            <input type="checkbox" name="likes" value="simple" id="likes">Singing
+            <input type="checkbox" name="likes" value="premium" id="likes">Dancing
+            <input type="checkbox" name="likes" value="standard" id="likes">Gaming
+            <input type="checkbox" name="likes" value="super" id="likes">Travelling
+        </div><br>
+        <!-- Input Submit
+        <input type="submit" value="Submit"> -->
+        <!-- Button Tag -->
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+        <br><br>
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; Udit's Website 2021</>
+    </footer>
+    </form>
+</body>
+</html>
